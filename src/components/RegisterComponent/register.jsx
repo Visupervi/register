@@ -5,6 +5,7 @@ import Agreement from "../AgreementComponent/agreement";
 import "../../../assets/css/resister.less";
 
 const AgreeItem = Checkbox.AgreeItem;
+const Item = Flex.Item;
 
 /**
  * @author Visupervi
@@ -169,11 +170,11 @@ class Register extends Component {
         </List>
         <div className={"checkBox-wrap"}>
           <Flex>
-            <Flex.Item>
+            <Item>
               <AgreeItem data-seed="logId" onChange={this.handleChecked.bind(this)} checked={this.state.isChecked} >
                 <a onClick={this.handleAgreement.bind(this)}>《请阅读用户服务协议》</a>
               </AgreeItem>
-            </Flex.Item>
+            </Item>
           </Flex>
         </div>
         <div className={"btn-wrap"}>

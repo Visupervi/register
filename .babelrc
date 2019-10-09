@@ -1,7 +1,6 @@
 {
   "presets": ["@babel/preset-react"],
   "plugins":[
-    ["import", { "libraryName": "antd", "libraryDirectory": "lib"}, "ant"],
-    ["import", { "libraryName": "antd-mobile", "libraryDirectory": "lib"}, "antd-mobile"]
+    ["import", { "libraryName": "antd-mobile","style": true}]
   ]
 }
